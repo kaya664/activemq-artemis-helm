@@ -80,7 +80,7 @@ The following tables lists the configurable parameters of the MySQL chart and th
 
 | Parameter                            | Description                           | Default                                                    |
 | ------------------------------------ | ------------------------------------- | ---------------------------------------------------------- |
-| `image.tag`                           | `vromero/activemq-artemis` image tag. | Most recent release                                        |
+| `image.tag`                           | `kahootali/activemq-artemis` image tag. | Most recent release                                        |
 | `image.pullPolicy`                    | Image pull policy                     | `IfNotPresent`                                             |
 | `image.pullSecret`                    | Secret to pull image                     | ``                                             |
 | `artemisUser`                        | Username of new user to create.       | `artemis`                                                  |
@@ -101,7 +101,7 @@ The following tables lists the configurable parameters of the MySQL chart and th
 | `resources.request.memory`           | Memory resource requests/limits       | `256Mi`                                                    |
 | `resources.request.cpu`              | CPU/Memory resource requests/limits   | `100m`                                                     |
 
-Some of the parameters above map to the env variables defined in the [vromero's ActiveMQ Artemis image](https://hub.docker.com/r/vromero/activemq-artemis/) refer to it for values, meaning, etc.
+Some of the parameters above map to the env variables defined in [kahootali/activemq-artemis-docker](https://github.com/kahootali/activemq-artemis-docker) refer to it for values, meaning, etc.
 
 Specify each parameter using the `--set key=value[,key=value]` argument to `helm install`. For example,
 

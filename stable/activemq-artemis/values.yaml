@@ -1,4 +1,3 @@
-
 image:
   # image.registry is the repository where the ActiveMQ Artemis image is stored
   registry: docker.io
@@ -11,6 +10,10 @@ image:
   # image.pullSecrets optionally specify an array of imagePullSecrets.Secrets must be manually created in the namespace.
   # ref: https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/
   pullSecret: ""
+
+env:
+- name: DISABLE_SECURITY
+  value: "true"  # never set to true in production
 
 # artemisUser sets the artemis admin user name
 artemisUser: artemis

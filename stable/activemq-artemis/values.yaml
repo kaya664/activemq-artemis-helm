@@ -2,7 +2,7 @@ image:
   # image.registry is the repository where the ActiveMQ Artemis image is stored
   registry: docker.io
   # image.repository is the ActiveMQ Artemis image name
-  repository: kahootali/activemq-artemis
+  repository: kahootali/activemq-artemis-docker
   # image.tag is the ActiveMQ Artemis image's tag: https://hub.docker.com/r/kahootali/activemq-artemis/tags
   tag: 2.17.0
   # image.pullPolicy is the ActiveMQ Artemis image's pull policy
